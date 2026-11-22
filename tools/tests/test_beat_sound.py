@@ -409,7 +409,7 @@ class SoundBrowser(SoundProject):
 
     def test_themes_contrast_and_narrow_layout(self):
         page = self.page
-        self.assertEqual(page.locator('h1').inner_text(), 'chase_ai_')
+        self.assertEqual(page.locator('h1').inner_text(), 'Shanley.AI')
         self.assertEqual(page.title(), 'Beat Review')
         self.assertEqual(page.locator('html').get_attribute('data-theme'), 'dark')
         def luminance(h):
